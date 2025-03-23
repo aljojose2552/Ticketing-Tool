@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "name": "it_support",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+   "start": "concurrently \"cross-env PORT=3001 npm run start --prefix it-support-frontend\" \"npm run start --prefix backend\""
+  },
+  "dependencies": {
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3"
+  }
+}
